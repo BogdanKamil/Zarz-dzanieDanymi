@@ -1,0 +1,162 @@
+/* Resetowanie marginesów, paddingów i box-sizing */
+* {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Styl dla głównego kontenera ocen */
+.grades-container {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styl dla zakładek przedmiotów */
+.subject-tabs {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center; /* Wyśrodkowanie przycisków */
+}
+
+.subject-tabs button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 0 5px; /* Dodanie odstępu między przyciskami */
+}
+
+.subject-tabs button:hover {
+  background-color: #0056b3;
+}
+
+/* Styl dla tabeli ocen */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th,
+table td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+table th {
+  background-color: #555;
+  color: white;
+}
+
+/* Styl dla kolumny ocen */
+.grades-row {
+  display: flex;
+  align-items: center;
+}
+
+.grade-item {
+  margin-right: 10px;
+}
+
+/* Styl dla przycisków edytuj/zapisz/usuń */
+.edit-button,
+.save-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.save-button {
+  background-color: #ffc107;
+}
+
+.delete-button {
+  margin: 0 5px;
+  background-color: #dc3545;
+}
+
+.edit-button:hover,
+.save-button:hover,
+.delete-button:hover {
+  opacity: 0.9;
+}
+
+/* Styl dla przycisku zapisz nowe oceny */
+.submit-button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 24px;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #c82333;
+}
+
+/* Styl dla listy ocen */
+.grades-list {
+  margin-top: 0px;
+  font-size: large;
+}
+
+.student-item {
+  border-radius: 8px;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.student-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* Styl dla ocen */
+.grade-item {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.grade-label {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.grade-value {
+  margin-right: 5px;
+}
+
+.edit-grade {
+  display: inline-block;
+}
+
+.edit-grade input[type="number"] {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 5px; /* Szerokość pola oceny */
+  text-align: center; /* Wyśrodkowanie tekstu */
+}
+
